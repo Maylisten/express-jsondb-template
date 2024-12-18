@@ -1,0 +1,67 @@
+{
+  "name": "create-express-jsondb-template",
+  "version": "0.0.0",
+  "description": "express jsondb 脚手架",
+  "keywords": [
+    "express",
+    "jsondb",
+    "template",
+    "cli"
+  ],
+  "author": "Mayer",
+  "license": "MIT",
+  "homepage": "https://github.com/Maylisten/express-jsondb-template",
+  "files": [
+    "dist/*",
+    "LICENSE",
+    "README.md"
+  ],
+  "main": "./dist/cli.cjs",
+  "module": "./dist/cli.mjs",
+  "types": "./dist/cli.d.cts",
+  "exports": {
+    "require": {
+      "types": "./dist/cli.d.cts",
+      "default": "./dist/cli.cjs"
+    },
+    "import": {
+      "types": "./dist/cli.d.mts",
+      "default": "./dist/cli.mjs"
+    }
+  },
+  "bin": "./dist/cli.js",
+  "scripts": {
+    "dev": "tsx src/cli",
+    "build": "pkgroll --dist dist",
+    "release": "release-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Maylisten/express-jsondb-template"
+  },
+  "bugs": {
+    "url": "https://github.com/Maylisten/express-jsondb-template/issues"
+  },
+  "dependencies": {
+    "chalk": "4.1.2",
+    "command-line-args": "^6.0.0",
+    "command-line-usage": "^7.0.3",
+    "download-git-repo": "^3.0.2",
+    "fs-extra": "^11.2.0",
+    "ora": "5.4.1",
+    "prompts": "^2.4.2",
+    "shelljs": "^0.8.5",
+    "typescript": "^5.6.2",
+    "validate-npm-package-name": "^6.0.0"
+  },
+  "devDependencies": {
+    "release-it": "^17.8.2",
+    "@types/command-line-args": "^5.2.3",
+    "@types/fs-extra": "^11.0.4",
+    "@types/prompts": "^2.4.9",
+    "@types/shelljs": "^0.8.15",
+    "@types/validate-npm-package-name": "^4.0.2",
+    "pkgroll": "^2.5.0",
+    "tsx": "^4.19.1"
+  }
+}
