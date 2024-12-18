@@ -2,7 +2,7 @@ import express from 'express';
 import cors from "cors"
 import cookieParser from "cookie-parser"
 import AppConfig from "../config/AppConfig"
-import userRouter from "./routes/UserRouter";
+import testRouter from "./routes/TestRouter";
 
 const app = express();
 
@@ -12,7 +12,7 @@ app.use(express.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(AppConfig.staticResourcePath))
 
-app.use('/user', userRouter);
+app.use('/test', testRouter);
 
 app.listen(AppConfig.port, "0.0.0.0", () => {
   console.log(`listening on port ${AppConfig.port}`)
