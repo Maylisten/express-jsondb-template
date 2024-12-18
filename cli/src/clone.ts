@@ -7,7 +7,7 @@ import {readJSON, writeJSON} from "fs-extra";
 import {deleteFileLines} from "./utils";
 import {UserOptions} from "./options";
 
-const templateRemoteUrl = "Maylisten/express-json-server-template";
+const templateRemoteUrl = "Maylisten/express-jsondb-template";
 let domain = "";
 let name = "";
 let completeName = "";

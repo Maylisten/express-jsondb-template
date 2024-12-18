@@ -8,7 +8,7 @@ export interface UserOptions {
   git: string
 }
 
-const defaultProjectName = "vue3-example-project";
+const defaultProjectName = "express-jsondb-template";
 
 const questions = [
   {
