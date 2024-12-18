@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.ts",
-    "build": "tsc",
     "cli:build": "pnpm run -C cli build",
     "cli:dev": "pnpm run -C cli dev",
-    "release": "pnpm run cli:build && pnpm -C cli release"
+    "release": "pnpm run cli:build && pnpm -C cli release",
+    "start": "nodemon src/index.ts",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
